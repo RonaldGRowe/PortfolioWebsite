@@ -8,7 +8,7 @@ Filename: layout.css
 */
 
 body{
-    background: repeating-linear-gradient(to top, #4f3f6c, #5d4c7e, #6b5991, #7a67a4, #8975b7, #8e7ec2, #9387ce, #9890d9, #9496de, #919be3, #8da1e7, #8aa6eb)no-repeat;
+    background-color: #354667;
 }
 
 header{
