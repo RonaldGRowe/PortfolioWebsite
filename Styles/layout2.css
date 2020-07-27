@@ -1,0 +1,145 @@
+/*
+Ron's Portfolio
+Portfolio|CSS Layout
+Author: Ronald Rowe
+Date: 07/27/2020
+Filename: layout2.css
+
+*/
+
+body{
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+div.header{
+    width: 30%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+    display: flex;
+
+}
+
+.header img{
+    height: auto;
+    width: 90%;
+    vertical-align: middle;
+    
+}
+
+.icon img{
+    height: 35px;
+    width: auto;
+    vertical-align: middle;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80px;
+    padding-left: 0;
+    margin: auto;
+}
+
+ul.icon{
+    width: 30%;
+}
+
+.icon li{
+    list-style-type: none;
+    height: 45px;
+    line-height: 45px;
+    width: 45px;
+    background-color: rgba(0, 0, 0, 50%);
+    margin: auto 2.5px;
+    border-radius: 10px;
+}
+
+nav{
+    height: 80px;
+    width: 60%;
+}
+
+
+.navigation li{
+    font-size: 20px;
+    list-style-type: none;
+    height: 50px;
+    line-height: 50px;
+    width: 135px;
+    margin: 0 2.5px;
+}
+
+
+.navigation a{
+    padding: 25px 10px;
+}
+
+a{
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 500;
+}
+.navigation a:link{
+    color: black;
+    font-weight: 500;    
+}
+
+.navigation a:visited{
+    color:darkgray;
+}
+
+
+div:hover{
+    background-color: rgba(0, 0, 0, 30%);
+
+}
+.navigation li:hover{
+    color: rgba(255, 255, 255);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 50%);
+
+
+}
+
+.navigation .current a{
+    color: #d4195e;
+    font-weight: normal;
+}
+li.current:hover{
+    background-color: transparent;
+}
+
+section{
+    margin: auto -10px;
+    height: 500px;
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+footer{
+    background-color: gray;
+    height: 50px;
+    
+}
+
+.icon img:hover{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
