@@ -1,3 +1,4 @@
+
 <?php
 
 if($_POST["submit"]) {
@@ -18,6 +19,7 @@ if($_POST["submit"]) {
 ?>
 <!DOCTYPE html>
 <html>
+
     <!--Ron's Portfolio
         Portfolio|Contact Me
         Author: Ronald Rowe
@@ -25,19 +27,18 @@ if($_POST["submit"]) {
         Filename: contactMe.html
     -->
 
-    <link rel="shortcut icon" href="">
-
     <head>
+    <link rel="shortcut icon" href="Images/code4.jpg">
         <title>Ron's Portfolio</title>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" href="Styles/layout.css" type="text/css"/>
+        <link rel="stylesheet" href="Styles/layout2.css" type="text/css"/>
     </head>
 
     <body>
         <header>
 
-            <div class="header">
-                <a href="index.html"><h1>Ron's Portfolio</h1></a>
+            <div class="headerimage">
+                <a href="index.html"><img src="Images/RonLogo3.png" alt="Ron's Portfolio" /></a>
             </div>
             
             <nav class="navigation">
