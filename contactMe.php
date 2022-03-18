@@ -69,7 +69,7 @@ if($_POST["submit"]) {
             </form>
         </section>
         <footer>
-
+            <p>Built and I guess you could call it designed all by Ronald Rowe</p>  
         </footer>
     </body>
 </html>    

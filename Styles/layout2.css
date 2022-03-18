@@ -7,121 +7,108 @@ Filename: layout2.css
 
 */
 
+/*Page Template*/
 body{
-    background-color: white;
+    background-color: lightgoldenrodyellow;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header{
     display: flex;
-    justify-content: space-between;
     height: 80px;
     align-items: center;
 }
 
-div.headerimage {    
+div.headerimage {
     border-radius: 10px;
+    width: 30%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.icon img{
-    height: 35px;
-    width: auto;
-    vertical-align: middle;
+.headerimage img {
+    width: 100%;
 }
+
+div.headerimage:hover{
+    background-color: rgba(0, 0, 0, 50%);
+}
+
+/*Nav Styles*/
 nav{
     height: 80px;
-    width: 60%;
+    width: 40%;
 }
+
 ul{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     height: 80px;
-    padding-left: 0;
     margin: auto;
 }
-.navigation li{
+
+.navigation li {
     font-size: 20px;
     list-style-type: none;
     height: 50px;
-    line-height: 50px;
     width: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 2.5px;
 }
 
-
 .navigation a{
-    padding: 25px 10px;
-}
-
-a{
     text-decoration: none;
-    padding: 5px;
     font-weight: 500;
 }
+
 .navigation a:link{
-    color: black;
-    font-weight: 500;    
+    color: darkgray;
 }
 
 .navigation a:visited{
-    color:darkgray;
+    color:black;
 }
 
-ul.icon{
-    width: 30%;
-}
-
-.icon li{
-    list-style-type: none;
-    height: 45px;
-    line-height: 45px;
-    width: 45px;
-    background-color: rgba(0, 0, 0, 50%);
-    margin: auto 2.5px;
-    border-radius: 10px;
-}
-
-
-
-
-
-
-div:hover{
-    background-color: rgba(0, 0, 0, 30%);
-
-}
 .navigation li:hover{
-    color: rgba(255, 255, 255);
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 50%);
-
-
 }
 
 .navigation .current a{
     color: #d4195e;
-    font-weight: normal;
 }
-li.current:hover{
+
+.navigation .current:hover{
     background-color: transparent;
 }
 
-section{
-    margin: auto -10px;
-    height: 500px;
-    text-align: center;
+ul.icon{
+    width: 30%;
+    justify-content: center;
 }
-form{
-    display: flex;
-    flex-direction: column;
-    width: 350px;
+
+.icon img{
+    height: 40px;
+    width: auto;
+    padding-top: 3px;
 }
-footer{
-    background-color: gray;
+
+.icon li {
+    list-style-type: none;
     height: 50px;
-    
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 50%);
+    margin: 0 2.5px;
+    border-radius: 10px;
 }
 
 .icon img:hover{
@@ -132,6 +119,23 @@ footer{
     transform: scale(1.2);
 }
 
+section{
+    margin: auto;
+    height: 500px;
+    text-align: center;
+}
+
+
+footer{
+    background-color: gray;
+    height: 50px;
+    text-align: center;
+    
+}
+/*Home Page Styles*/
+
+/*About Me Styles*/
+
 section.aboutme {
     width: 50%;
     margin: auto;
@@ -139,4 +143,41 @@ section.aboutme {
 
 section.aboutme p {
     text-align: center;
+}
+
+/*Project Page Styles*/
+
+.headercenter {
+    text-align: center;
+}
+
+div.projectdiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+section.projects {
+    width: 45%;
+    height: 400px;
+    outline: 5px solid black;
+
+}
+
+.projects img {
+    width: 50%;
+    height: auto;
+}
+
+img.tall {
+    height: 50%;
+    width: auto;
+}
+
+/*Contact Page Styles*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
 }
