@@ -43,9 +43,9 @@ if($_POST["submit"]) {
             
             <nav class="navigation">
                 <ul>
-                    <li><a href ="aboutMe.html">About Me</a></li>
+                    <li><a href ="aboutMe.html">About</a></li>
                     <li><a href ="projects.html">Projects</a></li>
-                    <li><a class="current" href ="contactMe.html">Contact Me</a></li>
+                    <li><a class="current" href ="contactMe.html">Contact</a></li>
                 </ul>
             </nav>
 
