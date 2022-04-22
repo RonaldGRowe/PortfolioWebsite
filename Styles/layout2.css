@@ -34,8 +34,13 @@ div.headerimage {
     width: 100%;
 }
 
-div.headerimage:hover{
+div.headerimage a:hover {
     background-color: rgba(0, 0, 0, 50%);
+    border-radius: 10px;
+}
+
+div.headerimage a.current:hover {
+    background-color: transparent;
 }
 
 /*Nav Styles*/
@@ -93,6 +98,7 @@ ul{
     background-color: transparent;
 }
 
+
 ul.icon{
     width: 30%;
     justify-content: center;
@@ -133,6 +139,7 @@ section{
 /*Footer Styles*/
 
 footer {
+    margin-bottom: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,7 +147,7 @@ footer {
     height: 50px;
     text-align: center;
 }
-/*Home Page Styles*/
+/*Index Home Page Styles*/
 
 /*About Me Styles*/
 
@@ -171,17 +178,24 @@ section.projects {
     height: 400px;
     outline: 2px solid black;
     margin-bottom: 45px;
-
 }
-
+section.tall{
+    display: inline-block;
+}
+section.tall p{
+    margin: auto;
+}
 .projects img {
     width: 50%;
     height: auto;
 }
 
 img.tall {
+    float: right;
     height: 50%;
     width: auto;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .projects img:hover {
