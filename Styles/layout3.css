@@ -135,11 +135,7 @@ ul.icon{
     transform: scale(1.2);
 }
 
-section{
-    margin: auto;
-    height: 500px;
-    text-align: center;
-}
+
 
 /*Footer Styles*/
 
@@ -153,7 +149,11 @@ footer {
     text-align: center;
 }
 /*Index Home Page Styles*/
-
+section.mainpage{
+    margin: auto;
+    height: 500px;
+    text-align: center;
+}
 /*About Me Styles*/
 
 section.aboutme {
@@ -162,7 +162,7 @@ section.aboutme {
 }
 
 section.aboutme p {
-    text-align: center;
+    text-align: left;
     font-size: 24px;
 }
 
