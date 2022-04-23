@@ -28,10 +28,10 @@ if($_POST["submit"]) {
     -->
 
     <head>
-    <link rel="shortcut icon" href="Images/code4.jpg">
+    <link rel="shortcut icon" href="Images/bracket_icon.png">
         <title>Ron's Portfolio</title>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" href="Styles/layout2.css" type="text/css"/>
+        <link rel="stylesheet" href="Styles/layout3.css" type="text/css"/>
     </head>
 
     <body>
@@ -54,7 +54,8 @@ if($_POST["submit"]) {
                 <li><a href="https://github.com/RonaldGRowe?tab=repositories" target="_blank"><img src="Images/gitHub_icon1.png" alt="GitHub"  /></a></li>
             </ul>
 
-        </header>        
+        </header>
+        <hr />
         <section>
             <form action="post" action="contactMe.php">
                 <label for="name">*Contact Name:</label>

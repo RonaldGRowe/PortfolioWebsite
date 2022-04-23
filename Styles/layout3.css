@@ -10,13 +10,12 @@ Filename: layout2.css
 /*Page Template*/
 body{
     background-color: lightgoldenrodyellow;
-    font-family: Hevetica Neue Regular;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header{
     display: flex;
     align-items: center;
-    background-color: lightblue;
     height: 100px;
     margin: -10px;
 }
@@ -35,12 +34,17 @@ div.headerimage {
 }
 
 div.headerimage a:hover {
-    background-color: rgba(0, 0, 0, 50%);
+    background-color: rgba(0, 0, 0, 35%);
     border-radius: 10px;
 }
 
 div.headerimage a.current:hover {
     background-color: transparent;
+}
+
+hr{
+    background-color: lightblue;
+    height: 1.5px;
 }
 
 /*Nav Styles*/
@@ -58,8 +62,7 @@ ul{
     margin: auto;
 }
 
-.navigation li {
-    font-size: 25px;
+.navigation li {    
     list-style-type: none;
     height: 50px;
     width: 135px;
@@ -70,8 +73,9 @@ ul{
 }
 
 .navigation a {
+    font-size: 25px;
+    font-weight: bold;
     text-decoration: none;
-    font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,14 +84,15 @@ ul{
     height: 100%;
 }
 
-.navigation a:link{
+.navigation a:visited{
     color: black;
 }
 
 
 .navigation li:hover{
+    color: black;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 50%);
+    background-color: rgba(0, 0, 0, 35%);
 }
 
 .navigation .current a{
@@ -117,7 +122,7 @@ ul.icon{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 50%);
+    background-color: rgba(0, 0, 0, 35%);
     margin: 0 2.5px;
     border-radius: 10px;
 }
