@@ -7,10 +7,14 @@ Filename: layout2.css
 
 */
 
+@font-face {
+    font-family: roboto;
+    src: url(RobotoSlab-VariableFont_wght.ttf);
+}
 /*Page Template*/
 body{
     background-color: lightgoldenrodyellow;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: roboto;
 }
 
 header{
