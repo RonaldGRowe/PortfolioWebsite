@@ -1,6 +1,6 @@
 
 <?php
-
+/*
 if($_POST["submit"]) {
     $recipient="ronaldgilesrowe@gmail.com";
     $subject="Contact Me Response";
@@ -15,7 +15,7 @@ if($_POST["submit"]) {
 
     $thankYou="<p>Thank you! Your message has been sent.</p>";
 }
-
+*/
 ?>
 <!DOCTYPE html>
 <html>

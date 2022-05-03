@@ -182,7 +182,16 @@ div.projectdiv {
     justify-content: space-evenly;
     align-items: center;
 }
+div.projectdiv h2 {
+    text-align: left;
+    margin-left: 15px;
+}
+
 section.projects {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
     width: 45%;
     height: 400px;
     outline: 2px solid black;
@@ -191,10 +200,11 @@ section.projects {
 section.tall{
     display: inline-block;
 }
-section.tall p{
-    margin: auto;
+section.projects p{
+    margin: auto 10px;
 }
 .projects img {
+    margin: auto;
     width: 50%;
     height: auto;
 }
