@@ -13,7 +13,7 @@ Filename: layout2.css
 }
 /*Page Template*/
 body{
-    background-color: lightgoldenrodyellow;
+    background-color: lightblue;
     font-family: roboto;
 }
 
@@ -47,7 +47,7 @@ div.headerimage a.current:hover {
 }
 
 hr{
-    background-color: lightblue;
+    background-color: blue;
     height: 1.5px;
 }
 
@@ -66,7 +66,8 @@ ul{
     margin: auto;
 }
 
-.navigation li {    
+.navigation li {
+    color: darkgray;
     list-style-type: none;
     height: 50px;
     width: 135px;
@@ -89,12 +90,12 @@ ul{
 }
 
 .navigation a:visited{
-    color: black;
+    color: darkslategray;
 }
 
 
 .navigation li:hover{
-    color: black;
+    color: white;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 35%);
 }
@@ -174,6 +175,7 @@ section.aboutme p {
 
 .headercenter {
     text-align: center;
+    color: darkslategray
 }
 
 div.projectdiv {
@@ -183,19 +185,23 @@ div.projectdiv {
     align-items: center;
 }
 div.projectdiv h2 {
+    color: darkblue;
     text-align: left;
     margin-left: 15px;
 }
 
 section.projects {
+    width: 45%;
+    height: 500px;
+    border-bottom: 2px groove blue;
+    border-right: 2px groove blue;
+    margin-bottom: 45px;
+}
+section.short {
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    width: 45%;
-    height: 400px;
-    outline: 2px solid black;
-    margin-bottom: 45px;
 }
 section.tall{
     display: inline-block;
@@ -203,21 +209,40 @@ section.tall{
 section.projects p{
     margin: auto 10px;
 }
-.projects img {
+div.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+div.icons {
+    display: flex;
+    align-items: center;
+}
+img.githubimg {
+    margin-right: 15px;
+    height: 55px;
+    width: auto;
+    float: right;
+}
+img.liveicon {
+    margin-right: 15px;
+    height: auto;
+    width: 75px;
+}
+img.projectimgshort {
     margin: auto;
-    width: 50%;
+    width: 75%;
     height: auto;
 }
 
-img.tall {
+img.projectimgtall {
     float: right;
     height: 50%;
     width: auto;
     margin-right: 10px;
     margin-left: 10px;
 }
-
-.projects img:hover {
+img.projectimg:hover {
     -webkit-transform: scale(2);
     -moz-transform: scale(2);
     -o-transform: scale(2);
