@@ -46,8 +46,8 @@ div.headerimage a.current:hover {
     background-color: transparent;
 }
 
-hr{
-    background-color: blue;
+hr {
+    background-color: gray;
     height: 1.5px;
 }
 
@@ -161,9 +161,23 @@ section.mainpage{
 }
 /*About Me Styles*/
 
+.aboutme h1 {
+    color: darkblue;
+}
 section.aboutme {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
     width: 50%;
     margin: auto;
+}
+section.aboutme img {
+    height: 400px;
+    width: auto;
+    margin: auto;
+    border-bottom: 4px groove blue;
+    border-right: 4px groove blue;
 }
 
 section.aboutme p {
