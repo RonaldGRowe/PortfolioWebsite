@@ -1,0 +1,170 @@
+﻿/*
+   New Perspectives on HTML and CSS
+   Tutorial 6
+   Tutorial Case
+
+   Survey Forms Style Sheet
+   Author: Brenda Sallier
+   Date: 02/03/14  
+
+   Filename:         forms.css
+   Supporting Files: customer.png, go.png, stop.png
+
+*/
+
+
+/* Field set styles*/
+
+
+fieldset      {
+   background-color: rgb(95, 95, 95);
+   border: 1px solid rgb(152,152,152);
+   float: left;
+   margin: 10px 0px 10px 0%;
+   width: 440px;
+   color: black;
+   
+}
+fieldset#experience {
+	float: right;
+	margin-right: 10px;
+}
+legend      {
+    background-color: rgb(32, 32, 32);
+    color: white; 
+    padding: 3px 0px;
+    text-indent: 5px;
+    width: 100%;
+    text: white;
+    
+}
+
+
+
+/* Label styles */
+
+label     {
+   clear: left;
+   display: block;
+   float: left;
+   font-size: 0.9em;
+   margin: 7px 4% 7px 5px ;
+   width: 40%;
+}
+
+
+img {
+	margin: 0px 48px 5px 0px ;
+	float: right;
+	vertical-align:  middle;
+}
+
+
+/* Input control styles */
+
+input      {
+  display: block;
+  float: left;
+  font-size: 0.9em;
+  margin: 7px 0px;
+  width: 50%;
+}
+
+input#ehan {
+	width: 350px;
+}
+
+input#zip {
+	width: 90px;
+}
+
+input#state      {
+   width: 35px;
+}
+inputer img {
+	margin-top: 9px;
+}
+fieldset#experience label {
+	margin-top: 11px;
+}
+/* Selection list styles */
+
+select      {
+   display: block;
+   float: left;
+   font-size: 0.9em;
+   margin: 7px 0px;
+}
+
+/* Option button styles*/
+
+fieldset.optionGroup {
+   border: 1px solid rgb(152,152,152);
+   float: right;
+   margin-right: 10px;
+ }
+
+fieldset.optionGroup label       {
+    display: inline;
+    float: none;
+    margin: 0px 3px 0px 0px;
+    width: 30px;
+}
+
+fieldset.optionGroup input       {
+   display: inline;
+   float: none;
+   margin: 0px 20px 0px 0px;
+   width: 20px;
+}
+
+/* Text area styles */
+
+textarea      {
+   display: block;
+   font-size: 0.9em;
+   float: left;
+   height: 150px;
+   margin: 10px 0px;
+   width: 50%;
+}
+
+
+/* Check box styles */
+
+#newsletter      {
+     color: rgb(233, 69, 0);
+     float: none;
+     margin: 10px auto;
+     text-align: center;
+     width: 90%;
+}
+
+
+#newsletter input       {
+     display: inline;
+     float: none;
+     width: 20px;
+}
+
+/* Number input box styles */
+
+
+#ordersPerMonth      {
+     width: 70px;
+}
+
+/* Range slider styles */
+
+label.sliderLabel      {
+    clear: none;
+    font-size: 0.7em;
+    margin: 10px 0px;
+    text-align: center;
+    width: 10px
+}
+
+input[type=range]        {
+   width: 150px;
+}
+

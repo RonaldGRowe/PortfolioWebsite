@@ -1,0 +1,45 @@
+﻿/*
+Template Name: PhotoFolio
+File: Gallery CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+.gallery{
+	display:block;
+	width:100%;
+	padding:20px auto 8px auto;
+	}
+
+.gallery ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+
+.gallery li{
+	display:block;
+	position:relative;
+	float:left;
+	width:150px;
+	height:150px;
+	margin:0 10px 10px 0;
+	padding:0;
+	}
+
+.gallery li a img{
+	display:block;
+	width:150px;
+	height:150px;
+	margin:0;
+	}
+
+.gallery li.last{
+	margin-right:0;
+	margin-bottom: 30px;
+	}
+	
+.gallery li#last{
+	margin-bottom: 10px;
+	}
