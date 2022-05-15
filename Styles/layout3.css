@@ -29,12 +29,14 @@ div.headerimage {
     width: 30%;
     height: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 
 .headerimage img {
-    width: 100%;
+    width: auto;
+    height: 45px;
+    margin-left: 15px;
 }
 
 div.headerimage a:hover {
@@ -115,8 +117,8 @@ ul.icon{
 }
 
 .icon img{
-    height: 40px;
-    width: auto;
+    height: auto;
+    width: 40px;
     padding-top: 3px;
 }
 
@@ -237,14 +239,15 @@ div.icons {
 }
 img.githubimg {
     margin-right: 15px;
-    height: 55px;
+    height: 35px;
     width: auto;
     float: right;
 }
 img.liveicon {
+    padding-top: 5px;
     margin-right: 15px;
     height: auto;
-    width: 75px;
+    width: 55px;
 }
 img.projectimgshort {
     margin: auto;
