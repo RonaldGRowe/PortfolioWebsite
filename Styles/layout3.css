@@ -289,6 +289,19 @@ img.projectimg:hover {
     -ms-transform: scale(2);
     transform: scale(2);
 }
+
+/*Resume Page Styles*/
+
+div.resumewrapper {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.resume {
+    width:90%;
+}
 /*Contact Page Styles*/
 
 form {
