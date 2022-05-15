@@ -67,7 +67,7 @@ ul{
 }
 
 .navigation li {
-    color: darkgray;
+    color: midnightblue;
     list-style-type: none;
     height: 50px;
     width: 135px;
@@ -90,7 +90,7 @@ ul{
 }
 
 .navigation a:visited{
-    color: darkslategray;
+    color: midnightblue;
 }
 
 
@@ -162,22 +162,25 @@ section.mainpage{
 /*About Me Styles*/
 
 .aboutme h1 {
-    color: darkblue;
+    color: navy;
+}
+div.aboutmewrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 section.aboutme {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
+    display: inline-block;
     width: 50%;
     margin: auto;
 }
 section.aboutme img {
+    float: right;
     height: 400px;
     width: auto;
-    margin: auto;
-    border-bottom: 4px groove blue;
-    border-right: 4px groove blue;
+    margin: auto 10px;
+    border: 4px groove blue;
 }
 
 section.aboutme p {
@@ -189,7 +192,7 @@ section.aboutme p {
 
 .headercenter {
     text-align: center;
-    color: darkslategray
+    color: midnightblue;
 }
 
 div.projectdiv {
