@@ -1,10 +1,11 @@
 # PortfolioWebsite
-Website computer programming portfolio
+Website all about me and my work
 
-Website to deliver easy communication access to
-githhub, linkedin, and personal email with contact page
+Contact me through email
+Find me on LinkedIn
+Find my writing on Medium
 
-Contains an about me page with picture
+Learn About Me
 
-Contains project page to display visual representation of work
-with small description
+Learn about the projects I have created
+See the technologies I have used and have experience with.
