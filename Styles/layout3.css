@@ -36,7 +36,7 @@ div.headerimage {
 .headerimage img {
     width: auto;
     height: 45px;
-    margin-left: 15px;
+    margin-left: 25px;
 }
 
 div.headerimage a:hover {
@@ -49,7 +49,7 @@ div.headerimage a.current:hover {
 }
 
 hr {
-    background-color: gray;
+    background-color: blue;
     height: 1.5px;
 }
 
@@ -69,7 +69,7 @@ ul{
 }
 
 .navigation li {
-    color: darkblue;
+    color: mediumblue;
     list-style-type: none;
     height: 50px;
     width: 135px;
@@ -92,7 +92,7 @@ ul{
 }
 
 .navigation a:visited{
-    color: darkblue;
+    color: mediumblue;
 }
 
 
@@ -147,6 +147,7 @@ ul.icon{
 /*Footer Styles*/
 
 footer {
+    visibility: hidden;
     margin-bottom: 0px;
     display: flex;
     align-items: center;
@@ -164,7 +165,7 @@ section.mainpage{
 /*About Me Styles*/
 
 .aboutme h1 {
-    color: navy;
+    color: mediumblue;
 }
 div.aboutmewrapper {
     display: flex;
@@ -193,14 +194,14 @@ section.aboutme p {
 
 section.aboutme p a {
     text-decoration: none;
-    color: blue;
+    color: mediumblue;
 }
 
 /*Project Page Styles*/
 
 .headercenter {
     text-align: center;
-    color: blue;
+    color: mediumblue;
 }
 
 div.projectdiv {
@@ -210,7 +211,7 @@ div.projectdiv {
     align-items: center;
 }
 div.projectdiv h2 {
-    color: darkblue;
+    color: blue;
     text-align: left;
     margin-left: 15px;
 }
@@ -231,6 +232,26 @@ section.short {
 section.tall{
     display: inline-block;
 }
+img.projectimgshort {
+    margin: auto;
+    width: 75%;
+    height: auto;
+}
+img.projectimgtall {
+    float: right;
+    height: 50%;
+    width: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+section.projects img:hover {
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+    -ms-transform: scale(2);
+    transform: scale(2);
+}
+
 section.projects p{
     margin: auto 10px;
 }
@@ -269,26 +290,7 @@ a.demolink {
     font-weight: 700;
     font-variant-caps: small-caps;
 }
-img.projectimgshort {
-    margin: auto;
-    width: 75%;
-    height: auto;
-}
 
-img.projectimgtall {
-    float: right;
-    height: 50%;
-    width: auto;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-img.projectimg:hover {
-    -webkit-transform: scale(2);
-    -moz-transform: scale(2);
-    -o-transform: scale(2);
-    -ms-transform: scale(2);
-    transform: scale(2);
-}
 
 /*Resume Page Styles*/
 
