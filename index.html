@@ -15,6 +15,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="Styles/layout3.css" type="text/css" />
 
+    
 </head>
 
 <body>
@@ -42,21 +43,30 @@
     </header>
     <hr />
     <section class="mainpage">
-        <h1>Hello,</h1>
+        <h1>Hello All!</h1>
         <h2>I am Ronald Rowe</h2>
-        <h2>Software Developer</h2>
-        <h2>Husband</h2>
-        <h2>Team Player</h2>
-        <h2>Problem Solver</h2>
-        <h2>Father</h2>
-        <h2>Hard Worker</h2>
-        <h2>Friend</h2>
-        <h2>Human</h2>
+        <h2 id="changetext">Software Developer</h2>
 
     </section>
     <footer>
         <p>Built and I guess you could call it designed all by Ronald Rowe</p>
 
     </footer>
+    <script>
+        var words = ["Husband", "Team Player", "Problem Solver", "Father", "Hard Worker", "Friend", "Software Developer", "Human"];
+        var i = 0;
+        function changetext() {
+            for (let word of words) {
+                let w = word;
+                ++i;
+                console.log(i);
+                setTimeout(() => { document.getElementById("changetext").innerHTML = w }, i*3000);
+            }
+            if (i < 1000) { changetext(); }            
+        }
+        
+        changetext();
+    </script>
+
 </body>
 </html>    

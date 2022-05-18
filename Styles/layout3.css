@@ -119,7 +119,7 @@ ul.icon{
 .icon img{
     height: auto;
     width: 40px;
-    padding-top: 3px;
+    padding-top: 3.5px;
 }
 
 .icon li {
@@ -157,7 +157,14 @@ footer {
     text-align: center;
 }
 /*Index Home Page Styles*/
-section.mainpage{
+section.mainpage h1 {
+    font-size: 30px;
+}
+section.mainpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin: auto;
     height: 500px;
     text-align: center;
@@ -188,7 +195,7 @@ section.aboutme img {
 
 section.aboutme p {
     text-align: left;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
 }
 
@@ -254,6 +261,7 @@ section.projects img:hover {
 
 section.projects p{
     margin: auto 10px;
+    font-size: 16px;
 }
 div.wrapper {
     display: flex;
