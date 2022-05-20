@@ -44,13 +44,12 @@
     <hr />
     <section class="mainpage">
         <h1>Hello All!</h1>
-        <h2>I am Ronald Rowe</h2>
+        <h2>I am <span class="blue">Ronald Rowe</span></h2>
         <h2 id="changetext">Software Developer</h2>
 
     </section>
     <footer>
         <p>Built and I guess you could call it designed all by Ronald Rowe</p>
-
     </footer>
     <script>
         var words = ["Husband", "Team Player", "Problem Solver", "Father", "Hard Worker", "Friend", "Software Developer", "Human"];
@@ -60,7 +59,7 @@
                 let w = word;
                 ++i;
                 console.log(i);
-                setTimeout(() => { document.getElementById("changetext").innerHTML = w }, i*3000);
+                setTimeout(() => { document.getElementById("changetext").innerHTML = w }, i*2000);
             }
             if (i < 1000) { changetext(); }            
         }
