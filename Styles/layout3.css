@@ -185,7 +185,7 @@ div.aboutmewrapper {
 }
 section.aboutme {
     display: inline-block;
-    width: 50%;
+    width: 750px;
     margin: auto;
 }
 section.aboutme img {
@@ -226,7 +226,7 @@ div.projectdiv h2 {
 }
 
 section.projects {
-    width: 45%;
+    width: 700px;
     height: 500px;
     border-bottom: 2px groove blue;
     border-right: 2px groove blue;
@@ -334,4 +334,114 @@ div.resumewrapper {
 }
 section.resume {
     width:90%;
+}
+
+
+/*Mobile Styles*/
+
+@media only screen and (max-width: 900px) {
+    /*Header Homepage Icon*/
+
+    div.headerimage {
+        width: 40%;
+        justify-content: center;
+    }
+
+    .headerimage img {
+        width: auto;
+        height: 28px;
+    }
+    
+    /*Navigation*/
+    nav {
+        width: 20%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        height: 60px;
+        margin-top: 10px;
+    }
+
+    .navigation li {
+        margin: 3px auto;
+        height: 40px;
+        width: 100px;
+        flex-direction: column;
+    }
+
+    .navigation a {
+        font-size: 20px;
+    }
+
+
+    .navigation li:hover {
+        color: white;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 35%);
+    }
+
+    /*Icon Styles*/
+    ul.icon {
+        width: 40%;
+    }
+
+    .icon img {
+        height: auto;
+        width: 36px;
+        padding-top: 4.5px;
+    }
+
+    .icon li {
+        list-style-type: none;
+        height: 40px;
+        width: 40px;
+    }
+
+    .icon img:hover {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -o-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+
+
+    /*Homepagestyles*/
+
+    section.mainpage h1 {
+        font-size: 26px;
+    }
+
+    section.mainpage {
+        width: 100%;
+        height: auto;
+    }
+
+    /*About Me Page*/
+
+    section.aboutme {
+        width: 100%;
+    }
+
+    section.aboutme img {
+            height: 200px;
+            width: auto;
+            border: 2px groove blue;
+    }
+    section.aboutme p {
+            font-size: 18px;
+    }
+
+
+    /*Project Page*/
+
+
+    /*Resume Page*/
+
+
+    @media only screen and (max-width: 565px){
+
+    }
+
 }
