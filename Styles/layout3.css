@@ -185,7 +185,7 @@ div.aboutmewrapper {
 }
 section.aboutme {
     display: inline-block;
-    width: 750px;
+    width: 850px;
     margin: auto;
 }
 section.aboutme img {
@@ -295,6 +295,7 @@ img.projectimgshort {
     margin: auto;
     width: 60%;
     height: auto;
+    border: 2px solid black;
 }
 img.projectimgtall {
     float: right;
@@ -304,6 +305,13 @@ img.projectimgtall {
     border: 2px solid black;
 }
 section.projects img.projectimgtall:hover {
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+    -ms-transform: scale(2);
+    transform: scale(2);
+}
+section.projects img.projectimgshort:hover {
     -webkit-transform: scale(2);
     -moz-transform: scale(2);
     -o-transform: scale(2);
@@ -410,6 +418,7 @@ section.resume {
     /*Homepagestyles*/
 
     section.mainpage h1 {
+        margin-top: 100px;
         font-size: 26px;
     }
 
@@ -435,8 +444,26 @@ section.resume {
 
 
     /*Project Page*/
+    section.projects {
+        width: 100%;
+        height: 600px;
+    }
 
-
+    section.projects img.projectimgtall:hover {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -o-transform: none;
+        -ms-transform: none;
+        transform: none;
+}
+    section.projects img.projectimgshort:hover {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -o-transform: none;
+        -ms-transform: none;
+        transform: none;
+}
+}
     /*Resume Page*/
 
 
