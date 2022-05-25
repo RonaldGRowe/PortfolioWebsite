@@ -352,11 +352,15 @@ section.resume {
     width:90%;
 }
 
+iframe.resumepdf {
+    width: 75%; 
+    height: 800px;
+}
 
 /*Mobile Styles*/
 
 @media only screen and (max-width: 900px) {
-    /*Header Homepage Icon*/
+    /*Mobile Header Homepage Icon*/
 
     div.headerimage {
         width: 40%;
@@ -368,7 +372,7 @@ section.resume {
         height: 28px;
     }
     
-    /*Navigation*/
+    /*Mobile Navigation*/
     nav {
         width: 20%;
     }
@@ -397,7 +401,7 @@ section.resume {
         background-color: rgba(0, 0, 0, 35%);
     }
 
-    /*Icon Styles*/
+    /*Mobile Icon Styles*/
     ul.icon {
         width: 40%;
         margin-right: 0px;
@@ -405,7 +409,7 @@ section.resume {
 
     .icon img {
         height: auto;
-        width: 36px;
+        width: 34px;
         padding-top: 4.5px;
     }
 
@@ -436,14 +440,14 @@ section.resume {
         height: auto;
     }
 
-    /*About Me Page*/
+    /*Mobile About Me Page*/
 
     section.aboutme {
         width: 100%;
     }
 
     section.aboutme img {
-            height: 200px;
+            height: 230px;
             width: auto;
             border: 2px groove blue;
     }
@@ -452,7 +456,7 @@ section.resume {
     }
 
 
-    /*Project Page*/
+    /*Mobile Project Page*/
     section.projects {
         width: 100%;
         height: 600px;
@@ -472,13 +476,20 @@ section.resume {
         -ms-transform: none;
         transform: none;
 }
+
+    /*Mobile Resume Page*/
+
+iframe.resumepdf {
+    width: 100%;
+    height: 600px;
 }
-    /*Resume Page*/
-
-
+section.resume {
+    width:100%;
+}
+/*Small Mobile Style*/
     @media only screen and (max-width: 565px){
         
-        /*Header Homepage Icon*/
+        /*Sm Mobile Header Homepage Icon*/
 
         header {
             height: 70px;
@@ -489,7 +500,7 @@ section.resume {
             width: 0%;
         }
 
-        /*Navigation*/
+        /*Sm Mobile Navigation*/
 
         nav {
             display: none;
@@ -498,14 +509,41 @@ section.resume {
 
         ul.icon {
             width: 100%;
+            display: flex;
+            justify-content:space-evenly;
         }
         ul.icon li.mobileli {
             display: revert;
         }
-        .navhidden:hover .navhidden {
+        li.menuli {
+            display: flex;
+            flex-direction: column;
+        }
+        li.menuli:hover ul.navhidden {
             display: revert;
             flex-direction: column;
         }
+        ul.navhidden li {
+            width: 80px;
+        }
+        ul.navhidden li a {
+            text-decoration: none;
+            color: blue;
+        }
+        li.menuli img {
+            height: 30px;
+            width: auto;
+            padding-top: 4.5px;
+            padding-left: 1px;
+        }
+        img.bracketicon {
+            padding-top: 2px;
+        }
+    }
+        /*Sm Mobile Resume Style*/
+
+    iframe.resumepdf {
+        height: 250px;
     }
 
 }
