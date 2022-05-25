@@ -116,6 +116,14 @@ ul.icon{
     justify-content: center;
 }
 
+ul.icon li.mobileli {
+        display: none;
+}
+
+ul.icon ul.navhidden {
+        display: none;
+}
+
 .icon img{
     height: auto;
     width: 40px;
@@ -147,7 +155,6 @@ ul.icon{
 /*Footer Styles*/
 
 footer {
-    visibility: hidden;
     margin-bottom: 0px;
     display: flex;
     align-items: center;
@@ -155,6 +162,7 @@ footer {
     background-color: gray;
     height: 50px;
     text-align: center;
+    display: none;
 }
 /*Index Home Page Styles*/
 section.mainpage h1 {
@@ -392,6 +400,7 @@ section.resume {
     /*Icon Styles*/
     ul.icon {
         width: 40%;
+        margin-right: 0px;
     }
 
     .icon img {
@@ -468,7 +477,35 @@ section.resume {
 
 
     @media only screen and (max-width: 565px){
+        
+        /*Header Homepage Icon*/
 
+        header {
+            height: 70px;
+        }
+
+        div.headerimage {
+            display: none;
+            width: 0%;
+        }
+
+        /*Navigation*/
+
+        nav {
+            display: none;
+            width: 0%;
+        }
+
+        ul.icon {
+            width: 100%;
+        }
+        ul.icon li.mobileli {
+            display: revert;
+        }
+        .navhidden:hover .navhidden {
+            display: revert;
+            flex-direction: column;
+        }
     }
 
 }
