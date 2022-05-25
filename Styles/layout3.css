@@ -385,7 +385,7 @@ iframe.resumepdf {
 
     .navigation li {
         margin: 3px auto;
-        height: 40px;
+        height: 55px;
         width: 100px;
         flex-direction: column;
     }
@@ -510,7 +510,8 @@ section.resume {
         ul.icon {
             width: 100%;
             display: flex;
-            justify-content:space-evenly;
+            justify-content: space-evenly;
+            margin-right: 35px;
         }
         ul.icon li.mobileli {
             display: revert;
@@ -521,23 +522,53 @@ section.resume {
         }
         li.menuli:hover ul.navhidden {
             display: revert;
+            display: flex;
             flex-direction: column;
+            justify-content: flex-start;
+        }
+        ul.navhidden li:hover ul.navhidden {
+            display: revert;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            
+        }
+        ul.navhidden {
+            height: 200px;
+            position: relative;
+            z-index: 150;
         }
         ul.navhidden li {
-            width: 80px;
+            background-color: gray;
+            width: 100px;
+            height: 40px;
+            position: relative;
+            z-index: 151;
         }
         ul.navhidden li a {
             text-decoration: none;
-            color: blue;
+            color: darkblue;
+            font-weight: 700;
+        }
+        li.mobileli.current {
+            border: 2px solid #d4195e;
+        }
+        .mobileli li.current {
+            border: 2px solid #d4195e;
+            color: #d4195e;
         }
         li.menuli img {
             height: 30px;
             width: auto;
             padding-top: 4.5px;
-            padding-left: 1px;
         }
         img.bracketicon {
             padding-top: 2px;
+            
+        }
+        img.bracketicon li {
+            display: flex;
+            justify-content: flex-start;
         }
     }
         /*Sm Mobile Resume Style*/
