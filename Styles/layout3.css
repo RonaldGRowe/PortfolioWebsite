@@ -20,6 +20,7 @@ body{
 header{
     display: flex;
     align-items: center;
+    justify-content:space-evenly;
     height: 100px;
     margin: -10px;
 }
@@ -33,12 +34,14 @@ div.headerimage {
     align-items: center;
 }
 
-.headerimage img {
+a.desktophimg img {
     width: auto;
     height: 45px;
     margin-left: 25px;
 }
-
+a.mobilehimg img {
+    display: none;
+}
 div.headerimage a:hover {
     background-color: rgba(0, 0, 0, 35%);
     border-radius: 10px;
@@ -54,12 +57,14 @@ hr {
 }
 
 /*Nav Styles*/
-nav{
+nav {
     height: 80px;
     width: 40%;
+    display: flex;
 }
 
 header ul{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -359,39 +364,59 @@ iframe.resumepdf {
 
 /*Mobile Styles*/
 
+@media only screen and (max-width: 1150px) {
+    /*Header Image Style*/
+    
+    
+    a.desktophimg img {
+        width: auto;
+        height: 38px;
+        margin-left: 10px;
+    }
+}
+
 @media only screen and (max-width: 900px) {
     /*Mobile Header Homepage Icon*/
 
     div.headerimage {
-        width: 40%;
-        justify-content: center;
+        width: 15%;
+        justify-content: space-evenly;
     }
 
-    .headerimage img {
-        width: auto;
-        height: 28px;
+    a.desktophimg {
+        display: none;
     }
+
+        a.mobilehimg img {
+            display: revert;
+            height: 55px;
+            margin: auto;
+        }
+    
     
     /*Mobile Navigation*/
     nav {
-        width: 20%;
+        width: 45%;
+        justify-content: space-evenly;
     }
 
     nav ul {
-        flex-direction: column;
-        height: 60px;
-        margin-top: 10px;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .navigation li {
-        margin: 3px auto;
-        height: 55px;
-        width: 100px;
-        flex-direction: column;
+        height: 50px;
+        width: 75px;
+        margin: auto;
     }
 
     .navigation a {
-        font-size: 20px;
+        font-size: 18px;
+        margin: auto;
     }
 
 
@@ -403,20 +428,20 @@ iframe.resumepdf {
 
     /*Mobile Icon Styles*/
     ul.icon {
-        width: 40%;
-        margin-right: 0px;
+        width: 35%;
+        margin: auto;
     }
 
     .icon img {
         height: auto;
-        width: 34px;
+        width: 44px;
         padding-top: 4.5px;
     }
 
     .icon li {
         list-style-type: none;
-        height: 40px;
-        width: 40px;
+        height: 55px;
+        width: 55px;
     }
 
     .icon img:hover {
@@ -428,7 +453,7 @@ iframe.resumepdf {
     }
 
 
-    /*Homepagestyles*/
+    /*Mobile Homepagestyles*/
 
     section.mainpage h1 {
         margin-top: 100px;
@@ -507,10 +532,22 @@ section.resume {
             width: 0%;
         }
 
+        .icon img {
+            height: auto;
+            width: 34px;
+            padding-top: 4.5px;
+        }
+
+        .icon li {
+            list-style-type: none;
+            height: 40px;
+            width: 40px;
+        }
+
         ul.icon {
             width: 100%;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: center;
             margin-right: 35px;
         }
         ul.icon li.mobileli {
