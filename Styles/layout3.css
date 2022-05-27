@@ -28,18 +28,18 @@ header{
 div.headerimage {
     border-radius: 10px;
     width: 30%;
-    height: 50px;
+    height: 100%;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
 }
 
 a.desktophimg img {
+    padding-top: 10px;
     width: auto;
-    height: 45px;
-    margin-left: 25px;
+    height: 35px;
 }
-a.mobilehimg img {
+div.mobileimgwrapper {
     display: none;
 }
 div.headerimage a:hover {
@@ -74,7 +74,7 @@ header ul{
 }
 
 .navigation li {
-    color: mediumblue;
+    color: #101097;
     list-style-type: none;
     height: 50px;
     width: 135px;
@@ -97,7 +97,7 @@ header ul{
 }
 
 .navigation a:visited{
-    color: mediumblue;
+    color: #101097;
 }
 
 
@@ -107,8 +107,8 @@ header ul{
     background-color: rgba(0, 0, 0, 35%);
 }
 
-.navigation .current a{
-    color: #d4195e;
+.navigation .current a {
+    color: #d41919;
 }
 
 .navigation .current:hover{
@@ -169,7 +169,9 @@ footer {
     text-align: center;
     display: none;
 }
+
 /*Index Home Page Styles*/
+
 section.mainpage h1 {
     font-size: 30px;
 }
@@ -190,10 +192,14 @@ div.mpwrapper {
 
 }
 .blue {
-    color: mediumblue;
+    color: #101097;
 }
 div.plangimg {
     width: 45%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 img.progimgs {
     width: 270px;
@@ -202,7 +208,7 @@ img.progimgs {
 /*About Me Styles*/
 
 .aboutme h1 {
-    color: mediumblue;
+    color: #101097;
 }
 div.aboutmewrapper {
     display: flex;
@@ -231,14 +237,14 @@ section.aboutme p {
 
 section.aboutme p a {
     text-decoration: none;
-    color: mediumblue;
+    color: #101097;
 }
 
 /*Project Page Styles*/
 
 .headercenter {
     text-align: center;
-    color: mediumblue;
+    color: #101097;
 }
 
 div.projectdiv {
@@ -247,7 +253,7 @@ div.projectdiv {
     justify-content: space-evenly;
 }
 div.projectdiv h2 {
-    color: blue;
+    color: mediumblue;
     text-align: left;
     margin-left: 15px;
 }
@@ -393,13 +399,17 @@ iframe.resumepdf {
         width: 15%;
         justify-content: space-evenly;
     }
-
+    div.mobileimgwrapper {
+        width: 75px;
+        display: flex;
+        align-content: center;
+        justify-self: center;
+    }
     a.desktophimg {
         display: none;
     }
 
     a.mobilehimg img {
-        display: revert;
         height: 55px;
         margin: auto;
     }
@@ -566,6 +576,7 @@ iframe.resumepdf {
             width: 100%;
             display: flex;
             justify-content: center;
+            align-content:center;
             margin-right: 35px;
         }
         ul.icon li.mobileli {
@@ -600,17 +611,17 @@ iframe.resumepdf {
             position: relative;
             z-index: 151;
         }
-        ul.navhidden li a {
-            text-decoration: none;
-            color: darkblue;
-            font-weight: 700;
-        }
+            ul.navhidden li a {
+                text-decoration: none;
+                color: #101097;
+                font-weight: 700;
+            }
         li.mobileli.current {
             border: 2px solid #d4195e;
         }
         .mobileli li.current {
             border: 2px solid #d4195e;
-            color: #d4195e;
+            color: #d41919;
         }
         li.menuli img {
             height: 36px;
@@ -624,14 +635,24 @@ iframe.resumepdf {
             display: flex;
             justify-content: flex-start;
         }
-    
+
+        /*Sm Index Home Page Styles*/
+        
+
+        section.mainpage {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column-reverse;
+            margin-top: 50px;
+        }
 
     /*Sm Mobile Project Style*/
 
     section.projects {
         height: 575px;
     }
-
+    
     img.projectimgshort {
         display: none;
     }
@@ -645,11 +666,22 @@ iframe.resumepdf {
     }
 
 }
-/*Small Mobile Style*/
+/*Very Small Mobile Style*/
 
 @media only screen and (max-width: 440px) {
+
+    /*Very Sm Mobile Index Page Styles*/
+
+    section.mainpage h1 {
+        font-size: 26px;
+    }
+
+
+    /*Very Sm Mobile Project Styles*/
+    
     section.projects h2 {
         font-size: 18px;
+        margin: 0px;
     }
     p.projinfo {
         font-size: 16px;
