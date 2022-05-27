@@ -255,7 +255,6 @@ div.hwrapper {
     width: 100%;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -300,6 +299,7 @@ div.bwrapper {
 }
 p.projinfo {
     text-align: left;
+    margin: 10px;
 }
 
 img.projectimgshort {
@@ -384,26 +384,26 @@ iframe.resumepdf {
         display: none;
     }
 
-        a.mobilehimg img {
-            display: revert;
-            height: 55px;
-            margin: auto;
-        }
-    
-    
+    a.mobilehimg img {
+        display: revert;
+        height: 55px;
+        margin: auto;
+    }
+
+
     /*Mobile Navigation*/
     nav {
         width: 45%;
         justify-content: space-evenly;
     }
 
-    nav ul {
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-        display: flex;
-        justify-content: space-between;
-    }
+        nav ul {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            display: flex;
+            justify-content: space-between;
+        }
 
     .navigation li {
         height: 50px;
@@ -468,14 +468,15 @@ iframe.resumepdf {
         width: 100%;
     }
 
-    section.aboutme img {
+        section.aboutme img {
             height: 230px;
             width: auto;
             border: 2px groove blue;
-    }
-    section.aboutme p {
+        }
+
+        section.aboutme p {
             font-size: 18px;
-    }
+        }
 
 
     /*Mobile Project Page*/
@@ -484,31 +485,35 @@ iframe.resumepdf {
         height: 600px;
     }
 
-    section.projects img.projectimgtall:hover {
-        -webkit-transform: none;
-        -moz-transform: none;
-        -o-transform: none;
-        -ms-transform: none;
-        transform: none;
-}
-    section.projects img.projectimgshort:hover {
-        -webkit-transform: none;
-        -moz-transform: none;
-        -o-transform: none;
-        -ms-transform: none;
-        transform: none;
-}
-    p.projinfo{
+        section.projects img.projectimgtall:hover {
+            -webkit-transform: none;
+            -moz-transform: none;
+            -o-transform: none;
+            -ms-transform: none;
+            transform: none;
+        }
+
+        section.projects img.projectimgshort:hover {
+            -webkit-transform: none;
+            -moz-transform: none;
+            -o-transform: none;
+            -ms-transform: none;
+            transform: none;
+        }
+
+    p.projinfo {
         font-size: 20px;
     }
     /*Mobile Resume Page*/
 
-iframe.resumepdf {
-    width: 100%;
-    height: 600px;
-}
-section.resume {
-    width:100%;
+    iframe.resumepdf {
+        width: 100%;
+        height: 600px;
+    }
+
+    section.resume {
+        width: 100%;
+    }
 }
 /*Small Mobile Style*/
     @media only screen and (max-width: 565px){
@@ -533,14 +538,14 @@ section.resume {
 
         .icon img {
             height: auto;
-            width: 34px;
+            width: 30px;
             padding-top: 4.5px;
         }
 
         .icon li {
             list-style-type: none;
-            height: 40px;
-            width: 40px;
+            height: 35px;
+            width: 35px;
         }
 
         ul.icon {
@@ -606,6 +611,19 @@ section.resume {
             display: flex;
             justify-content: flex-start;
         }
+    
+
+    /*Sm Mobile Project Style*/
+
+    section.projects {
+        height: 575px;
+    }
+
+    img.projectimgshort {
+        display: none;
+    }
+    img.projectimgtall {
+        display: none;
     }
         /*Sm Mobile Resume Style*/
 
@@ -613,4 +631,14 @@ section.resume {
         height: 250px;
     }
 
+}
+/*Small Mobile Style*/
+
+@media only screen and (max-width: 440px) {
+    section.projects h2 {
+        font-size: 18px;
+    }
+    p.projinfo {
+        font-size: 16px;
+    }
 }
