@@ -538,14 +538,14 @@ iframe.resumepdf {
 
         .icon img {
             height: auto;
-            width: 30px;
+            width: 37px;
             padding-top: 4.5px;
         }
 
         .icon li {
             list-style-type: none;
-            height: 35px;
-            width: 35px;
+            height: 45px;
+            width: 45px;
         }
 
         ul.icon {
@@ -599,12 +599,11 @@ iframe.resumepdf {
             color: #d4195e;
         }
         li.menuli img {
-            height: 30px;
+            height: 36px;
             width: auto;
             padding-top: 4.5px;
         }
         img.bracketicon {
-            padding-top: 2px;
             
         }
         img.bracketicon li {
