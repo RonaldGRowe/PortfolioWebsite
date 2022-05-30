@@ -38,7 +38,7 @@
         </nav>
 
         <ul class="icon">
-            <li class="mobileli current" ><a href="index.html"><img src="Images/bracket_icon.png" alt="HomePage" class="bracketicon" /></a></li>
+            <li class="mobileli current"><a href="index.html"><img src="Images/bracket_icon.png" alt="HomePage" class="bracketicon" /></a></li>
             <li class="mobileli menuli">
                 <img src="Images/menu.png" alt="Menu" />
                 <ul class="navhidden">
@@ -57,7 +57,7 @@
     <hr />
     <section class="mainpage">
         <div class="plangimg">
-            <img class="progimgs" src="Images/csharp.png" alt="Programming Language Images" />
+            <img id="changepic"class="progimgs" src="Images/csharp.png" alt="Programming Language Images" width="270px" height="270px"/>
         </div>
         <div class="mpwrapper">
             <h1>Hello All!</h1>
@@ -66,23 +66,23 @@
         </div>
 
     </section>
-    
+
     <footer>
         <p>Built and I guess you could call it designed all by Ronald Rowe</p>
     </footer>
     <script>
+        var pics = ["Images/pythonimg.png", "Images/git-github.jpg", "Images/csshtmlimg.png", "Images/csharp.png"];
         var words = ["Husband", "Team Player", "Problem Solver", "Father", "Hard Worker", "Friend", "Human", "Software Developer"];
-        var i = 0;
-        function changetext() {
-            for (let word of words) {
-                let w = word;
-                ++i;
-                console.log(i);
-                setTimeout(() => { document.getElementById("changetext").innerHTML = w }, i*2000);
-            }
-            if (i < 1000) { changetext(); }            
-        }
         
+        function changetext() {
+            for (var i = 0; i < 1000; i++) {
+                let w = words[i % words.length];
+                let p = pics[i % pics.length];
+                setTimeout(() => { document.getElementById("changetext").innerHTML = w }, (i*2-1)  * 1000);
+                setTimeout(() => { document.getElementById("changepic").src = p }, (i*2) * 1000);
+                }
+        }
+
         changetext();
     </script>
 

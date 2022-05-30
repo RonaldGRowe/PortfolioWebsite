@@ -200,10 +200,13 @@ div.plangimg {
     display: flex;
     justify-content: center;
     align-content: center;
+    height: 300px;
 }
 img.progimgs {
-    width: 270px;
+    max-width: 100%;
+    max-height: 100%;
     height: auto;
+    width: auto;
 }
 /*About Me Styles*/
 
@@ -318,6 +321,7 @@ div.bwrapper {
     display: inline-block;
 }
 p.projinfo {
+    font-size: 18px;
     text-align: left;
     margin: 10px;
 }
@@ -387,7 +391,7 @@ iframe.resumepdf {
     
     a.desktophimg img {
         width: auto;
-        height: 38px;
+        height: 30px;
         margin-left: 10px;
     }
 }
@@ -624,12 +628,9 @@ iframe.resumepdf {
             color: #d41919;
         }
         li.menuli img {
-            height: 36px;
+            height: 34px;
             width: auto;
-            padding-top: 4.5px;
-        }
-        img.bracketicon {
-            
+            padding-top: 6px;
         }
         img.bracketicon li {
             display: flex;
@@ -646,16 +647,24 @@ iframe.resumepdf {
             flex-direction: column-reverse;
             margin-top: 50px;
         }
+        div.mpwrapper {
+            width: 100%;
+        }
 
-    /*Sm Mobile Project Style*/
+        .blue {
+            color: #101097;
+        }
+
+        div.plangimg {
+            width: 100%;
+        }
+
+            /*Sm Mobile Project Style*/
 
     section.projects {
-        height: 575px;
+        height: 650px;
     }
     
-    img.projectimgshort {
-        display: none;
-    }
     img.projectimgtall {
         display: none;
     }
@@ -668,13 +677,10 @@ iframe.resumepdf {
 }
 /*Very Small Mobile Style*/
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 400px) {
 
     /*Very Sm Mobile Index Page Styles*/
 
-    section.mainpage h1 {
-        font-size: 26px;
-    }
 
 
     /*Very Sm Mobile Project Styles*/
@@ -683,7 +689,15 @@ iframe.resumepdf {
         font-size: 18px;
         margin: 0px;
     }
-    p.projinfo {
-        font-size: 16px;
+    img.projectimgshort {
+        display: none;
     }
+
+    p.projinfo {
+        font-size: 18px;
+    }
+    section.projects {
+        height: 650px;
+    }
+
 }
