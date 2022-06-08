@@ -78,8 +78,8 @@
             for (var i = 0; i < 1000; i++) {
                 let w = words[i % words.length];
                 let p = pics[i % pics.length];
-                setTimeout(() => { document.getElementById("changetext").innerHTML = w }, (i*2-1)  * 1000);
-                setTimeout(() => { document.getElementById("changepic").src = p }, (i*2) * 1000);
+                setTimeout(() => { document.getElementById("changetext").innerHTML = w }, (i*2+1)  * 1000);
+                setTimeout(() => { document.getElementById("changepic").src = p }, (i*2+2) * 1000);
                 }
         }
 
